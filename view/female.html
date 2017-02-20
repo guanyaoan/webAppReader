@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>女生频道</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/all.css">
+</head>
+<body>
+<div class="top">
+    <a href="/" class="top_back"></a>
+    <span class="top_title">女生频道</span>
+    <a href="/" class="header_home"></a>
+</div>
+
+<section class="channel-h5" id="app">
+
+    <div class="channel_header">
+        <p class="channel_title">{{males[0].ad_name}}</p>
+    </div>
+    <div>
+        <div>
+            <ul class="list-h5">
+                <li v-for="item in male0">
+                    <a href="/book?id=11067">
+                        <div class="book-h5">
+                            <div class="book-h5_cover">
+                                <img v-bind:src="item.cover" alt="{{item.title}}">
+                            </div>
+                            <div class="book-h5_info">
+                                <p class="book-h5_title">{{item.title}}</p>
+                                <p class="book-h5_summary_f">{{item.summary}}</p>
+                                <p class="book-h5_author">{{item.authors}}</p>
+                                <div class="book-h5_wrap_f">
+                                    <div class="book_tag" v-for="tag in item.tags">{{tag}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:" class="channel-group_footer">查看更多</a>
+    </div>
+
+    <div class="channel_header">
+        <p class="channel_title">{{males[1].ad_name}}</p>
+    </div>
+    <div>
+        <div>
+            <ul class="list-h5">
+                <li v-for="item in male1">
+                    <a href="/book?id=11067">
+                        <div class="book-h5">
+                            <div class="book-h5_cover">
+                                <img v-bind:src="item.cover" alt="{{item.title}}">
+                            </div>
+                            <div class="book-h5_info">
+                                <p class="book-h5_title">{{item.title}}</p>
+                                <p class="book-h5_summary_f">{{item.summary}}</p>
+                                <p class="book-h5_author">{{item.authors}}</p>
+                                <div class="book-h5_wrap_f">
+                                    <div class="book_tag" v-for="tag in item.tags">{{tag}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:" class="channel-group_footer">更多主编推荐&gt;&gt;</a>
+    </div>
+
+    <div class="channel_header">
+        <p class="channel_title">{{males[2].ad_name}}</p>
+    </div>
+    <div>
+        <div>
+            <ul class="list-h5">
+                <li v-for="item in male2">
+                    <a href="/book?id=11067">
+                        <div class="book-h5">
+                            <div class="book-h5_cover">
+                                <img v-bind:src="item.cover" alt="{{item.title}}">
+                            </div>
+                            <div class="book-h5_info">
+                                <p class="book-h5_title">{{item.title}}</p>
+                                <p class="book-h5_summary_f">{{item.summary}}</p>
+                                <p class="book-h5_author">{{item.authors}}</p>
+                                <div class="book-h5_wrap_f">
+                                    <div class="book_tag" v-for="tag in item.tags">{{tag}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:" class="channel-group_footer">更多新书抢鲜读&gt;&gt;</a>
+    </div>
+
+    <div class="channel_header">
+        <p class="channel_title">{{males[3].ad_name}}</p>
+    </div>
+    <div>
+        <div>
+            <ul class="list-h5">
+                <li v-for="item in male3">
+                    <a href="/book?id=11067">
+                        <div class="book-h5">
+                            <div class="book-h5_cover">
+                                <img v-bind:src="item.cover" alt="{{item.title}}">
+                            </div>
+                            <div class="book-h5_info">
+                                <p class="book-h5_title">{{item.title}}</p>
+                                <p class="book-h5_summary_f">{{item.summary}}</p>
+                                <p class="book-h5_author">{{item.authors}}</p>
+                                <div class="book-h5_wrap_f">
+                                    <div class="book_tag" v-for="tag in item.tags">{{tag}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:" class="channel-group_footer">更多完本精品&gt;&gt;</a>
+    </div>
+</section>
+
+
+<!--注意：app.js的rootPath根目录为/static/-->
+<script src="/static/script/vue.js"></script>
+<script src="/static/script/zepto.js"></script>
+<script src="/static/script/pages/female.js"></script>
+</body>
+</html>

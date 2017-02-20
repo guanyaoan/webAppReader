@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="top">
+    <a href="/" class="top_back"></a>
+    <span class="top_title">分类</span>
+    <a href="/" class="header_home"></a>
+</div>
+
+<section id="app" style="width: {{screen_window}}px;">
+    <div class="titleIcon">
+        <em class="icon"></em>
+        <h1>网文男频</h1>
+    </div>
+    <ul class="uList2col">
+        <li class="uList" v-for="item in male">
+            <div class="uListInfo" style="background-image:url({{item.new_image}}!m);">
+                <p class="label">{{item.label}}</p>
+                <p class="fiction_count">{{item.fiction_count}}</p>
+            </div>
+        </li>
+    </ul>
+
+    <div class="titleIcon">
+        <em class="icon"></em>
+        <h1>网文女频</h1>
+    </div>
+    <ul class="uList2col">
+        <li class="uList" v-for="item in female">
+            <div class="uListInfo" style="background-image:url({{item.new_image}}!m);">
+                <p class="label">{{item.label}}</p>
+                <p class="fiction_count">{{item.fiction_count}}</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+<script src="/static/script/vue.js"></script>
+<script src="/static/script/zepto.js"></script>
+<script src="/static/script/pages/category.js"></script>
+<script src="/static/script/pages/index.js"></script>
+</body>
+</html>
